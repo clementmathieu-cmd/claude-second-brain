@@ -4,3 +4,4 @@
 .DS_Store
 Thumbs.db
 .obsidian/workspace*.json
+__pycache__/
