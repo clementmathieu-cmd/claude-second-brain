@@ -1,0 +1,11 @@
+[Unit]
+Description=Commit et push du soir du vault
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Remplacer /chemin/vers/le/vault par le chemin réel
+Environment=VAULT_DIR=/chemin/vers/le/vault
+Environment=VAULT_MACHINE=serveur
+WorkingDirectory=/chemin/vers/le/vault
+ExecStart=/usr/bin/env node /chemin/vers/le/vault/.claude/hooks/sync-soir.mjs

@@ -1,0 +1,8 @@
+# Fins de ligne : LF dans le dépôt, quel que soit le poste
+* text=auto
+# Anti-conflits entre machines : Git garde les lignes des deux côtés. Jamais sur master-index.
+_index/recent.md              merge=union
+_index/journal-sessions.md    merge=union
+_index/index-connaissance.md  merge=union
+_index/index-pro.md           merge=union
+_index/index-perso.md         merge=union
